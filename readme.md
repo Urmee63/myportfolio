@@ -72,6 +72,7 @@ source venv/bin/activate
 3. Install Backend Dependencies
 
 pip install -r requirements.txt
+
 4. Install Frontend Dependencies (Tailwind)
 
 # Install Node modules for Tailwind
