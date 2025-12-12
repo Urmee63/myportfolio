@@ -59,7 +59,6 @@ git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 
 2. Set Up Virtual Environment (Python)
-Bash
 
 # Create the environment
 python -m venv venv
@@ -70,18 +69,14 @@ venv\Scripts\activate
 # On Mac/Linux:
 source venv/bin/activate
 3. Install Backend Dependencies
-Bash
 
 pip install -r requirements.txt
 4. Install Frontend Dependencies (Tailwind)
-Bash
 
 # Install Node modules for Tailwind
 npm install
 5. Build the CSS
 You must compile the Tailwind classes before running the server.
-
-Bash
 
 # One-time build
 npm run build
@@ -89,7 +84,6 @@ npm run build
 # OR Watch mode (for development)
 npm run watch
 6. Run the Server
-Bash
 
 # Apply database migrations
 python manage.py makemigrations
