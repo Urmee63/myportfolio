@@ -1,6 +1,5 @@
-# 👨‍💻 Portfolio Website (Urmee Pal)
+# 👨‍💻 Portfolio Website
 
-```markdown
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -33,7 +32,7 @@ This project serves as a practical demonstration of the following technical skil
 | **Backend Development** | **Django 5**, Python, ORM, Class-Based Views |
 | **Frontend Development** | **Tailwind CSS**, HTML5, JavaScript, Responsive Design |
 | **Database** | **MySQL** (Production), Database Modeling |
-| **DevOps & Tools** | **Git**, Git, npm |
+| **DevOps & Tools** | **Git**, npm |
 | **Design** | UI/UX Principles, Mobile-First Architecture |
 
 ---
@@ -55,10 +54,10 @@ Follow these steps to get the project running on your own machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 
-### 2. Set Up Virtual Environment (Python)
+2. Set Up Virtual Environment (Python)
 Bash
 
 # Create the environment
