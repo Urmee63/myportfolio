@@ -53,7 +53,7 @@ Before running the project locally, ensure you have the following installed:
 Follow these steps to get the project running on your own machine.
 
 ```bash
-### 1. Clone the Repository
+1. Clone the Repository
 
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
