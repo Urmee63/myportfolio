@@ -68,6 +68,7 @@ python -m venv venv
 venv\Scripts\activate
 # On Mac/Linux:
 source venv/bin/activate
+
 3. Install Backend Dependencies
 
 pip install -r requirements.txt
@@ -75,6 +76,7 @@ pip install -r requirements.txt
 
 # Install Node modules for Tailwind
 npm install
+
 5. Build the CSS
 You must compile the Tailwind classes before running the server.
 
@@ -83,6 +85,7 @@ npm run build
 
 # OR Watch mode (for development)
 npm run watch
+
 6. Run the Server
 
 # Apply database migrations
