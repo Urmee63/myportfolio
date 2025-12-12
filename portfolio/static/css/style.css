@@ -1,0 +1,18 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Google Font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom modal style */
+#project-modal {
+  display: none;
+}
+
+.modal-active {
+  display: flex !important;
+}

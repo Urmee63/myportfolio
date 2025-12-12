@@ -1,0 +1,25 @@
+# Python / Django
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Virtual environment (even though it's outside the repo, just in case)
+../venv/
+
+# VS Code settings
+.vscode/
+
+# Environment files
+.env
+*.env
+
+# Node / Tailwind
+node_modules/
+dist/
+
+# Static files created by collectstatic
+staticfiles/
+
+# OS files
+.DS_Store
+Thumbs.db
