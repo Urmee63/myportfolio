@@ -29,10 +29,10 @@ This project serves as a practical demonstration of the following technical skil
 
 | Category | Technologies |
 | :--- | :--- |
-| **Backend Development** | **Django 5**, Python, ORM, Class-Based Views |
-| **Frontend Development** | **Tailwind CSS**, HTML5, JavaScript, Responsive Design |
+| **Backend Development** | **Django**, Python, ORM, Class-Based Views |
 | **Database** | **MySQL** (Production), Database Modeling |
-| **DevOps & Tools** | **Git**, WhiteNoise (Static Files), npm |
+| **Frontend Development** | **Tailwind CSS**, HTML5, JavaScript, Responsive Design |
+| **DevOps & Tools** | **Dotenv** (Secret Management)|**Git**, WhiteNoise (Static Files), npm |
 | **Design** | UI/UX Principles, Mobile-First Architecture |
 
 ---
@@ -51,15 +51,13 @@ Before running the project locally, ensure you have the following installed:
 ## 🔧 Usage (Run Locally)
 
 Follow these steps to get the project running on your own machine.
-
+### 1. Clone the Repository
 ```bash
-1. Clone the Repository
-
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/Urmee63/myportfolio.git
 cd YOUR_REPO_NAME
-
-2. Set Up Virtual Environment (Python)
-
+```
+### 2. Set Up Virtual Environment
+```bash
 # Create the environment
 python -m venv venv
 
@@ -68,27 +66,41 @@ python -m venv venv
 venv\Scripts\activate
 # On Mac/Linux:
 source venv/bin/activate
+```
+### 3. Environment Configuration (.env)
 
-3. Install Backend Dependencies
+Create a .env file in the root directory (same level as manage.py) and add your credentials:
 
+```bash
+SECRET_KEY=your_secret_key
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
+
+# Database (MySQL)
+DATABASE_URL=mysql://your_username:your_password@localhost:3306/your_DB
+# Tailwind 
+NPM_BIN_PATH = your_npm_bin_path #once the requirements are satisfied 
+```
+### 4. Install Backend Dependencies
+```bash
 pip install -r requirements.txt
-
-4. Install Frontend Dependencies (Tailwind)
-
+```
+### 5. Install Frontend Dependencies (Tailwind)
+```bash
 # Install Node modules for Tailwind
 npm install
-
-5. Build the CSS
+```
+### 6. Build the CSS
 You must compile the Tailwind classes before running the server.
-
+```bash
 # One-time build
 npm run build
 
 # OR Watch mode (for development)
 npm run watch
-
-6. Run the Server
-
+```
+### 6. Run the Server
+```bash
 # Apply database migrations
 python manage.py makemigrations
 python manage.py migrate
@@ -98,17 +110,29 @@ python manage.py createsuperuser
 
 # Start the server
 python manage.py runserver
+```
 Open your browser to http://127.0.0.1:8000/.
 
-📂 Project Structure
-Plaintext
-
-├── portfolio/          # Main Django App (Views, Models)
-│   ├── migrations/     # Database Schemas (Research, Experience, etc.)
-│   ├── templates/      # HTML Files
-│   └── static/         # Compiled CSS/JS
-├── tailwind/           # Tailwind Configuration & Source CSS
-├── media/              # User uploads (Resumes, Project Images)
+### 📂 Project Structure
+```bash
+myportfolio
+├── myportfolio/  
+│   ├── settings.py         
+│   └── urls.py
+├── portfolio/          
+│   ├── templates/      
+│   ├── static/ 
+│   ├── admin.py               
+│   ├── apps.py            
+│   ├── models.py           
+│   ├── views.py
+│   └── urls.py          
+├── tailwind/       
+├── media/              
 ├── static/
 ├── templates/
-└── manage.py           # Django entry point
+│   ├── partials
+│   └── portfolio    
+├── .env                    
+└── manage.py            
+```

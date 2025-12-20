@@ -20,6 +20,8 @@ dist/
 # Static files created by collectstatic
 staticfiles/
 
+media/
+
 # OS files
 .DS_Store
 Thumbs.db
