@@ -1,6 +1,6 @@
 // portfolio/static/js/script.js
 
-// --- Helper: Create Tech Badges ---
+//  Helper: Create Tech Badges 
 function createBadges(stackString, container) {
   container.innerHTML = '';
   if (!stackString) return;
@@ -17,7 +17,7 @@ function createBadges(stackString, container) {
   });
 }
 
-// --- Project Modal Functions ---
+//  Project Modal Functions 
 function openProjectModalFromCard(card) {
   const title = card.dataset.title || '';
   const stack = card.dataset.stack || '';
@@ -69,7 +69,7 @@ function closeProjectModal() {
   }
 }
 
-// --- Research Modal Functions ---
+//  Research Modal Functions 
 function openResearchModalFromCard(card) {
   const title = card.dataset.title || '';
   const stack = card.dataset.stack || '';
@@ -110,7 +110,7 @@ function closeResearchModal() {
   }
 }
 
-// --- Contact Modal Functions ---
+//  Contact Modal Functions 
 function openContactModal() {
   const modal = document.getElementById('contactModal');
   if (modal) {
@@ -131,7 +131,7 @@ function closeContactModal() {
   }
 }
 
-// --- EVENT LISTENERS (Initialize on Load) ---
+//  EVENT LISTENERS (Initialize on Load) 
 document.addEventListener('DOMContentLoaded', function () {
   
   // 1. Hook up Modal Close Buttons
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// --- Global Key Handler (Escape Key) ---
+//  Global Key Handler (Escape Key) 
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
     closeProjectModal();

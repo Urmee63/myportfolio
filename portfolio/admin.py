@@ -1,12 +1,12 @@
 from django.contrib import admin
 from .models import Profile, Skill, Project, Experience, Testimonial, Research, ContactMessage, AboutImage, AcademicProject
 
-# 1. Create an Inline Admin for the images
+# Create an Inline Admin for the images
 class AboutImageInline(admin.TabularInline):
     model = AboutImage
     extra = 1  # Number of empty upload boxes to show by default
 
-# 2. Update the Profile Admin to include the Inline
+# Update the Profile Admin to include the Inline
 class ProfileAdmin(admin.ModelAdmin):
     inlines = [AboutImageInline]
 

@@ -18,7 +18,6 @@ class Profile(models.Model):
         return f"{self.name}"
 
 class AboutImage(models.Model):
-    # Links this image to Profile
     profile = models.ForeignKey(Profile, related_name='about_images', on_delete=models.CASCADE)
     image = models.ImageField(upload_to='about/')
     
@@ -28,7 +27,6 @@ class AboutImage(models.Model):
 class Skill(models.Model):
     name = models.CharField(max_length=50)
     level = models.CharField(max_length=50, blank=True)
-    # Controls if it shows in the main Skills section
     is_visible = models.BooleanField(default=True, help_text="Uncheck if this is just a project tag")
 
     def __str__(self):

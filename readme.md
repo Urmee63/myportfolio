@@ -32,7 +32,7 @@ This project serves as a practical demonstration of the following technical skil
 | **Backend Development** | **Django 5**, Python, ORM, Class-Based Views |
 | **Frontend Development** | **Tailwind CSS**, HTML5, JavaScript, Responsive Design |
 | **Database** | **MySQL** (Production), Database Modeling |
-| **DevOps & Tools** | **Git**, npm |
+| **DevOps & Tools** | **Git**, WhiteNoise (Static Files), npm |
 | **Design** | UI/UX Principles, Mobile-First Architecture |
 
 ---
